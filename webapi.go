@@ -9,9 +9,9 @@ func main() {
 		w.Write([]byte("Hello World"))
 	})
 
-	http.HandleFunc("/sang", func(w http.ResponseWriter, req *http.Request) {
-		w.Write([]byte("Hello sang"))
-	})
+	// http.HandleFunc("/sang", func(w http.ResponseWriter, req *http.Request) {
+	// 	w.Write([]byte("Hello sang"))
+	// })
 
 	http.HandleFunc("/Byounghak", func(w http.ResponseWriter, req *http.Request) {
 		w.Write([]byte("Hello Byounghak"))
