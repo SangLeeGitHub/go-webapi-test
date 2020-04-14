@@ -1,9 +1,9 @@
 package main
- 
+
 import (
-    "net/http"
+	"net/http"
 )
- 
+
 func main() {
     http.HandleFunc("/hello", func(w http.ResponseWriter, req *http.Request) {
         w.Write([]byte("Hello World"))
@@ -17,6 +17,9 @@ func main() {
     http.HandleFunc("/yhong", func(w http.ResponseWriter, req *http.Request) {
         w.Write([]byte("Hello yhong"))
     })
+  	http.HandleFunc("/Byounghak", func(w http.ResponseWriter, req *http.Request) {
+		w.Write([]byte("Hello Byounghak"))
+	  })
  
     http.ListenAndServe(":5000", nil)
 }
