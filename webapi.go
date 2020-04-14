@@ -18,16 +18,18 @@ func main() {
     http.HandleFunc("/yhong", func(w http.ResponseWriter, req *http.Request) {
         w.Write([]byte("Hello yhong"))
     })
-  	http.HandleFunc("/Byounghak", func(w http.ResponseWriter, req *http.Request) {
-		w.Write([]byte("Hello Byounghak"))
-	  })
+    http.HandleFunc("/Byounghak", func(w http.ResponseWriter, req *http.Request) {
+        w.Write([]byte("Hello Byounghak"))
+    })
     http.HandleFunc("/jung", func(w http.ResponseWriter, req *http.Request) {
         w.Write([]byte("Hello jung"))
     })
     http.HandleFunc("/Jerry", func(w http.ResponseWriter, req *http.Request) {
       w.Write([]byte("Hello Jerry"))
     })
- 
+    http.HandleFunc("/jaemyung", func(w http.ResponseWriter, req *http.Request) {
+      w.Write([]byte("Hello jaemyung"))
+    })
     http.ListenAndServe(":5000", nil)
 
 }
