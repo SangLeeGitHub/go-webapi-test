@@ -28,7 +28,7 @@ func main() {
       w.Write([]byte("Hello Jerry"))
     })
     http.HandleFunc("/jaemyung", func(w http.ResponseWriter, req *http.Request) {
-      w.Write([]byte("Hello Jerry"))
+      w.Write([]byte("Hello jaemyung"))
     })
     http.ListenAndServe(":5000", nil)
 
